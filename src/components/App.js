@@ -1,17 +1,18 @@
-import React from 'react';
-import SongList from './SongList';
-import SongDetail from './SongDetail';
+import React from "react";
+import SongList from "./SongList";
+import SongDetail from "./SongDetail";
 
 const App = () => {
   return (
-    <div className="ui container grid">
-      <div className="ui row">
-        <div className="column eight wide">
+    <div className="">
+      <h3>Select a song</h3>
+      <div className="">
+        <div className="text-left col-9">
           <SongList />
         </div>
-        <div className="column eight wide">
-          <SongDetail />
-        </div>
+      </div>
+      <div className="col-6">
+        <SongDetail />
       </div>
     </div>
   );
