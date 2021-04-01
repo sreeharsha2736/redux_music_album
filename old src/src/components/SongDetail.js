@@ -5,7 +5,6 @@ const SongDetail = ({ song }) => {
   if (!song) {
     return <div>Select a song</div>;
   }
-
   return (
     <div>
       <h3>Playing:</h3>
@@ -17,9 +16,7 @@ const SongDetail = ({ song }) => {
     </div>
   );
 };
-
 const mapStateToProps = (state) => {
   return { song: state.selectedSong };
 };
-
 export default connect(mapStateToProps)(SongDetail);
